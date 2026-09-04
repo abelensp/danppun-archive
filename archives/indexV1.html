@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DAN's webSite</title>
+	<script src="https://danppun.neocities.org/css/title.js"></script>
+	<link rel="icon" href="https://danppun.neocities.org/images/icon.gif">
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="" rel="stylesheet" type="text/css" media="all">
+    <style>
+       body {
+	 background-color: #fda8cf;
+	 background-image:url("https://danppun.neocities.org/images/index/bgindex.png");
+     width: 950px;
+     margin-left: auto;
+     margin-right: auto;
+     font-family:
+     font-size:12px;
+     overflow-x: hidden;
+ }
+ 
+ audio::-webkit-media-controls-panel{
+		background-color:#f8c7e4;
+ }
+ 
+ 
+  .headbox {
+	 border: 1px solid #e23196;
+	 border-bottom: 0px;
+	 border-top-left-radius: 20px;
+	 border-top-right-radius: 20px;
+	 background-color: #e85aab;
+	 background-position:center;
+	 margin-left: auto;
+     margin-right: auto;
+     height: 80px;
+     width: 800px;
+     position: relative;
+ }
+
+.headbox td {
+	border:1px solid blac
+}
+
+ .logo {
+	 width:220px;
+ }
+ 
+ .table {
+	 background-color: #fee6f4;
+	 border: 1px solid #e23196;
+     border-bottom-left-radius: 20px;
+	 border-bottom-right-radius: 20px;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     width: 800px;
+	 height:572px;
+	 
+ }
+ 
+  .table td {
+	 border-radius: 20px;
+     vertical-align: top;
+     position: relative;
+	 
+ }
+
+ .table tr {
+     vertical-align: top;
+     position: relative;
+	 
+ }
+ 
+ .content {
+	 width:590px;
+	 height:580px;
+	 overflow-y: scroll;
+
+ }
+
+::-webkit-scrollbar {
+  width: 3px; 
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+background-color:#e85aab;
+}
+
+.Enter a{
+	color:black;
+	text-decoration:none;
+	text-align:center;
+}
+.Enter a:hover{
+	text-decoration:underline;
+	text-decoration-color:#e23196;
+}
+
+#reloj {
+	 z-index: 1000;
+	 position: absolute;
+	 height:62px;
+	 margin:7px 5px;
+	 border:none;
+	 background:none;
+	 font-size: 12px;
+}
+ .wrap {
+     width: 120px;
+}
+
+.widget {
+	 width: 120px;	
+}
+
+.widget p {
+	 display: inline-block;
+	 line-height: 3px;
+}
+
+.fecha {
+     width: 100px;
+     border: 1px solid rgb(148, 148, 148);
+	 text-align: center;
+	 border-radius: 9px;
+     background: rgb(255, 254, 254);
+     color: #3e2a2b;
+     height: 20px;
+     margin-bottom: 5px;
+     margin-left: 20px;
+     box-shadow:  1px 1px 0px black;
+}
+
+.reloj {
+	 width: 120px;
+	 height:20px;
+	 border: 1px solid rgb(168, 167, 167);
+	 text-align: center;
+	 border-radius: 9px;
+     background: rgb(255, 255, 255);
+     color: #e23196;
+     margin-left: 10px;
+     box-shadow:  1px 1px 0px black;
+     padding-bottom:2px;
+}
+
+.reloj .caja-segundos {
+     display: inline-block;
+}
+
+.reloj .segundos, .reloj .ampm {
+	 display: inline-block ;
+}
+    </style>
+  </head>
+  <body>
+	<table class="headbox">
+		<tr>
+			<td class="logo">
+			<a href="https://neocities.org/site/danppun"><img src="https://danppun.neocities.org/imagenes/index/TITULO.png" style="width:170px;padding:5px;"></a>
+			</td>
+			<td class="navi">
+			<div id="botones" style="position:relative;top:18px;right:22px;">
+				<marquee scrollamount="10" width="290px"><span style="font-weight:bold;position:relative;color:white;"><img src="https://danppun.neocities.org/imagenes/index/speech_surprise2ByWhimsical.gif" height="20">Last uptaded: 21 September 2022<img src="https://danppun.neocities.org/imagenes/index/speech_surprise2ByWhimsical.gif" height="20"></span></marquee>
+				<img src="https://danppun.neocities.org/images/danppun.png" >
+			</div>
+			<div id="reloj" style="position:absolute;right:55px;top:20px;">
+        
+        <!--Digital clock--> <!--Clock from vermoonper.neocities.org-->
+            <div class="wrap" >
+                <div class="widget">
+                    <!--Fecha = Date, Dia semana = Day week, Mes = Month, Dia = Day-->
+                    <div class="fecha">
+                          <p id="diaSemana" class="diaSemana"></p>
+                          <p>,</p>
+                          <p id="mes" class="mes"></p>
+                          <p id="dia" class="dia"></p>
+                    </div>
+
+                      <!--Reloj = Clock, (Horas, Minutos, Segundos) = (Hours, Minutes, Seconds)-->
+                      <div class="reloj">
+                          <p id="horas" class="horas"></p>
+                          <p>:</p>
+                          <p id="minutos" class="minutos"></p>
+                          <p>:</p>
+                          <div class="caja-segundos">
+                          <p id="segundos" class="segundos"></p>
+                          <p id="ampm" class="ampm"></p>
+                          </div>
+                      </div>
+                </div>
+				<script type="text/javascript" src="https://danppun.neocities.org/css/reloj.js"></script>
+				</div>
+            
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<table class="table">
+		<tr>
+			<td>
+			<div class="content">
+				<div class="Enter">
+					<a href="https://danppun.neocities.org/homepage.html" style="font-weight:bold;"><h2>Click to Enter!</h2></a>
+					<img src= "">
+				</div>
+				<div id="Site uptades" style="padding:10px;margin-top:-40px;"><br>
+					<center><p><span style="text-align:center;font-weight:bold;font-size:25px;"><img src="https://danppun.neocities.org/imagenes/index/cinamoroll.gif"><img src="https://danppun.neocities.org/imagenes/index/cinamoroll.gif">Site uptades<img src="https://danppun.neocities.org/imagenes/index/cinamoroll.gif"><img src="https://danppun.neocities.org/imagenes/index/cinamoroll.gif"></span></p></center>
+						<p><span style="font-weight:bold;color:#b71a61;">[25.05.22] </span><img src="https://danppun.neocities.org/imagenes/index/newByWhimsical.gif">	<br>I already said so many times I don't like my layouts, so I changed the index since is the first face everyone sees. Hope you like it.</p>
+						<p><span style="font-weight:bold;color:#b71a61;"></span><br></p>
+						<span style="position:absolute;font-weight:bold;bottom:15px;left:5px;">Website started: March 2nd, 2021</span>
+				</div>
+				
+			</div>
+			</td>
+			<td>
+			<div style="width:200px;">
+				<center><audio controls autoplay style="width:200px;height:20px;">
+				<source src="https://files.catbox.moe/hh4x1n.mp3" type="audio/mpeg" >
+				</audio></center>
+				<img src="https://danppun.neocities.org/imagenes/index/kouta.jpg" width="200">
+				<img src="https://danppun.neocities.org/imagenes/index/anuncioKodansha.jpg" width="200">
+				<img src="https://danppun.neocities.org/imagenes/index/shugocharaKodansha.png" width="200">
+				<img src="https://danppun.neocities.org/imagenes/index/sanrioDanshi.jpg" width="200" style="border-radius:20px;">
+			</div>
+			</td>
+		</tr>
+	</table>
+  </body>
+</html>

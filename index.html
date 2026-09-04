@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://danppun.neocities.org/css/reloj.css">
+    <link rel="stylesheet" href="https://sugarforbrains.neocities.org/mobring/onionring.css">
+    <title>danppun </title>
+    <style>
+        body{
+            background-image: url(https://danppun.neocities.org/imagenes/index/background.jpg);
+            background-repeat: repeat-y;
+            background-size: 300px;
+            background-color: #fdfaf1;
+			font-family: monospace;
+			font-size: 12px;
+		}
+
+        a{
+            color:#7d9047;
+        }
+        a:hover{
+            color:#be6d7c;
+        }
+
+        .center{
+            margin:auto;
+        }
+
+        .tabla{
+            width:50%;
+            height:600px;
+            text-align:left;
+        }
+
+        td{
+            background-color: white;
+            border:1px solid black;
+            vertical-align:top;
+        }
+
+        #nav{
+            width:25%;
+        }
+
+        #cont{
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width:75%;
+            overflow-y:auto;
+            
+        }
+
+        .nav{
+            background-image: url(https://danppun.neocities.org/imagenes/index/navigation.jpg);
+            background-size: contain;
+            width:80%;
+            height:180px;
+            margin:auto;
+        }
+
+        .link{
+            color:#6b4a1e;
+            width:100px;
+            height:40px;
+        }
+
+        .webrings{
+            float:left;
+            margin-left: 10px;
+            height:230px;
+            width:240px;
+            overflow-y:auto;
+        }
+
+        .update{
+            float:right;
+            margin-right:10px;
+        }
+
+        .none{
+            border:none;
+        }
+
+        #fanlist{
+            height:100px;
+            overflow-y:auto;
+        }
+
+        audio{
+            width:100%;
+        }
+
+        ::-webkit-scrollbar {
+            width: 11px; 
+            background: transparent; 
+          }
+          
+          ::-webkit-scrollbar-thumb {
+          background-color:transparent;
+          }
+    </style>
+</head>
+<body>
+    
+    <!--RELOJ Y FECHA-->
+    <div>
+        <div id="reloj" style="position:absolute;top:10px;right:10px;">
+            <!-- FC2 Contador - desde aquí -->
+            <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39838204&main=1"></script>
+            <noscript><img src="//counter1.fc2.com/counter_img.php?id=39838204&main=1" /></noscript>
+            <!-- FC2 Contador - Hasta aquí -->
+            <!--Digital clock--> <!--Clock from vermoonper.neocities.org-->
+                <div class="wrap">
+                    <div class="widget">
+                        <!--Fecha = Date, Dia semana = Day week, Mes = Month, Dia = Day-->
+                        <div class="fecha">
+                              <p id="diaSemana" class="diaSemana"></p>
+                              <p>,</p>
+                              <p id="mes" class="mes"></p>
+                              <p id="dia" class="dia"></p>
+                        </div>
+
+                          <!--Reloj = Clock, (Horas, Minutos, Segundos) = (Hours, Minutes, Seconds)-->
+                          <div class="reloj">
+                              <p id="horas" class="horas"></p>
+                              <p>:</p>
+                              <p id="minutos" class="minutos"></p>
+                              <p>:</p>
+                              <div class="caja-segundos">
+                              <p id="segundos" class="segundos"></p>
+                              <p id="ampm" class="ampm"></p>
+                              </div>
+                          </div>
+                    </div>
+                  <script type="text/javascript" src="https://danppun.neocities.org/css/reloj.js"></script>
+                </div>        
+        </div>
+    </div>
+    <!--TERMINA RELOJ Y FECHA-->
+    <table class="tabla center">
+        <tr>
+            <td id="nav">
+                <div style="background-color: white; width:95%;margin:auto;">
+                    <p style="text-align: center;"><img src="https://danppun.neocities.org/imagenes/index/hanakimi.jpg" width="90%">
+                    danppun<br>
+                    <span style="font-size: 10px;color:#673d28;">**Alert: This website has pages with automatic music and <br>it's not mobile friendly</span></div>
+                    </p>
+
+
+                    <div class="nav"><br>
+                        <div style="position:relative;left:0px;top:12px;text-align: center;">
+                        <a href="">About</a><br>
+                        <a href="https://danppun.neocities.org/gallery">Gallery</a><br>
+                        <a href="">Links</a><br>
+                        <a href="">Sitemap</a><br>
+                        <a href="https://users3.smartgb.com/g/g.php?a=s&i=g36-32121-80">Guestbook</a></div></div>
+                        <p style="text-align: center;">
+                            <span style="background-color: white;">Link to my website</span><br><br>
+                            <img src="https://danppun.neocities.org/danppun_btn.png">
+                            <textarea class="link"><a href="https://danppun.neocities.org" target="_blank"><img src="https://danppun.neocities.org/danppun_btn.png"></textarea>
+                        </p>
+                        <marquee>Playing right now: Undertale OST: 048 - Alphys</marquee>
+                        <audio controls autoplay>
+                            <source src="https://files.catbox.moe/j432vx.mp3" type="audio/mpeg">
+                        </audio>
+                        
+                
+            </td>
+            <td id="cont">
+                <p style="margin:20px 10px;"><img src="https://danppun.neocities.org/imagenes/index/kutusita.jpg" style="height:90px;float:right;margin:6px;">
+                    Hello everyone, this is Dan! Welcome to my personal website: Danppun. This is my little space on the internet where I come to mess around sometimes 
+                    and have fun! Here you will find my art, collections, thoughts and some feelings stored with care ^_^ <br>I like horror and cute things.</p>
+                
+                    <table>
+                        <tr>
+                            <td class="none" width="120px"> <a href="https://www.mabsland.com/Adoption.html"><img src="https://danppun.neocities.org/imagenes/index/Censor_PGb.gif"></a></td>
+                            <td class="none" width="50%"><p style="position: relative;bottom:10px;">Some of the pages around this place may not work or load correctly, it's been a little while since I've got to clean the site, so I'm very sorry
+                                for the disturbance, I'll try to get all of it in place the fastest I can.
+                            </p></td>
+                            <td class="none"><div id="fanlist">
+                                <a href="http://www.marheavenj.net/komaeda/fanlist.php" target="_blank"><img src="https://danppun.neocities.org/imagenes/index/fanlist/nagito.jpg"></a>
+                                <a href="https://fan.enamour.nu/ccs/join.php" target="_blank"><img src="https://danppun.neocities.org/imagenes/index/fanlist/ccs.png"></a><br>
+                                <a href="https://imaginary.nu/zutto/index.php" target="_blank"><img src="https://danppun.neocities.org/imagenes/index/fanlist/syaosaku.gif"></a>
+                                <a href="https://imaginary.nu/henshin/about.php" target="_blank"><img src="https://danppun.neocities.org/imagenes/index/fanlist/mahoushoujo.gif"></a>
+                                <!--<a href="https://mikh.net/cheese/index.php"><img src="https://danppun.neocities.org/imagenes/index/fanlist/queso.gif"></a>
+                                <a href="https://totallygirl.net/tea/index.php"><img src="https://danppun.neocities.org/imagenes/index/fanlist/tea.png"></a>
+                                <a href="http://contradiction.altervista.org/cheesecake/index.php"><img src="https://danppun.neocities.org/imagenes/index/fanlist/cheesecake.png"></a>-->
+                            </div></td>
+                        </tr>
+                    </table>
+                
+                <table><tr><td class="none">
+                        <div class="webrings">
+                        
+                        <div id='mobring'>
+                            <script type="text/javascript" src="https://sugarforbrains.neocities.org/mobring/onionring-variables.js"></script>
+                            <script type="text/javascript" src="https://sugarforbrains.neocities.org/mobring/puter-widget.js"></script>
+                        </div>
+
+                        <div>
+                            <script src="https://jellyworld.neocities.org/scripts/jellyring.js"></script>
+                            <webring-css site="https://danppun.neocities.org/"></webring-css>
+                        </div>
+
+                        <div id="selfinsertwebringvertical" style="position: relative;right:15px">
+                            <script src="https://koinuko.neocities.org/shipping/webring/webringverticalscript.js"></script>
+                                <body onload="setListNumber(), selfInsertWebringLoad()"/>
+                            <script>
+                                function setListNumber() {
+                                positionInList = 10
+                                };
+                            </script>
+                        </div>
+
+                        <div id="vocaring" style="position:relative;right:10px;"><script src="https://webring.adilene.net/webring.js"></script></div>
+
+                    </div></td ><td class="none"><div class="update">
+                        <iframe src="https://danppun.neocities.org/updates" height="225px" width="220px"></iframe>
+                    </div>
+                </td></tr></table>
+                <br>
+
+                <div class="song">
+                    <table><tr>
+                        <td class="none" >Song of the month: <br>"Days like this" - 'Falsettos'</td>
+                        <td class="none" style="background-color:#fdfaf1;">This month I rewatched Falsettos after many many years, this time I found a version with spanish subtitles, so it turnes out it's 
+                            the first time I watch the musical understanding more than the 80% of it's content! <a href="https://danppun.neocities.org/FOTM/fotm_1">Read more here!</a>
+                        </s></td>
+                        
+                    </tr></table>
+                </div>
+
+                <marquee>
+                    <a href="https://vinizinho.net/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/vinizone.png"></a>
+                    <a href="https://parkaction.neocities.org/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/parkaction.gif"></a>
+                    <a href="https://rgbteahouse.neocities.org/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/rgb.jpg"></a>
+                    <a href="https://whitedessert.neocities.org/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/whitedesertbutton.png"></a>
+                    <a href="https://incessantpain.neocities.org/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/incessantpain.gif"></a>
+                    <a href="https://letslearntogether.neocities.org/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/LLT.png"></a>
+                    <a href="https://utsushimi.neocities.org/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/utsushimi.png"></a>
+                    <a href="https://zanarkand.neocities.org/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/zanarkand.png"></a>
+                    <a href="https://4vilo.neocities.org/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/4ivilos.gif"></a>
+                    <a href="https://cadnomori.neocities.org/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/cadnomori.png"></a>
+                    <a href="https://nuange.neocities.org/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/nuange.gif"></a>
+                    <a href="https://vinizinho.net/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/vinizone.png"></a>
+                    <a href="https://ratpilled.neocities.org" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/ratpilled.gif"></a>
+                    <a href="https://feign.neocities.org" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/feign.png"></a>
+                    <a href="https://wildsage.neocities.org" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/wildsage.png"></a>
+                    <a href="https://bisuko.neocities.org" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/bisuko.png"></a>			
+                    <a href="https://lugaw.gay/" target="_blank"><img src="https://danppun.neocities.org/imagenes/link/button/lugaw.png"></a>	
+                    <a href="https://saint-images.neocities.org/"><img src="https://danppun.neocities.org/imagenes/link/button/me-bmh.gif"></a>
+                    <a href="https://16504532.neocities.org"><img src="https://danppun.neocities.org/imagenes/link/button/2.0%20button.gif"></a>
+                    <a href="https://7nonsense.neocities.org/"><img src="https://danppun.neocities.org/imagenes/link/button/7nonsense.gif"></a>
+                    <a href="https://cinni.net/"><img src="https://danppun.neocities.org/imagenes/link/button/cinni.gif"></a>
+                    <a href="https://poble.cl" target="_blank"><img src="https://media.poble.cl/assets/buttons/button1.gif" alt="Poble's Purple Palace"></a>
+                </marquee>
+
+                
+
+            </td>
+        </tr>
+    </table>
+    <a href="https://youtu.be/owe2_Hw8XoE?si=UJLCQS3BwD9JHMnK"><img src="https://danppun.neocities.org/imagenes/index/the_kids.gif" style="position:fixed;bottom:0px;right:0px;height:400px;"></a>
+    <!--<center><p>Hosted on neocities since 2021</p></center>-->
+</body>
+</html>
